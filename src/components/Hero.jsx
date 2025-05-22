@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import './Styles/HeroStyle.css';
 import PlayIcon from '../assets/svg/PlayIcon';
+import HeroImage from '../assets/icons/heroicons/HeroImg_1.png';
 const Hero = () => {
     return (
         <section className="bg-light py-5">
@@ -58,7 +59,7 @@ const Hero = () => {
                     </Col>
                     <Col md={5} lg={5} xl={5} className="d-none d-md-block">
                         <img
-                            src="https://via.placeholder.com/500x350"
+                            src={HeroImage}
                             alt="Illustration"
                             className="img-fluid"
                             style={{ borderRadius: 12 }}
