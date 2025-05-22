@@ -1,0 +1,24 @@
+.social-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 32px;
+    padding: 0;
+  }
+  
+  .social-bar .line {
+    width: 1px;
+    height: 101px;
+    background-color: #000000;
+  }
+  
+  .social-bar .icon svg {
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-bar .icon:hover {
+    opacity: 1 !important;
+  }
