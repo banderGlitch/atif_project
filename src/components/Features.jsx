@@ -30,7 +30,7 @@ const Features = () => {
         <Row>
           {features.map((feature, idx) => (
             <Col md={4} className="mb-4" key={idx}>
-              <Card className="shadow-sm h-100">
+              <Card className="shadow-sm h-100 p-3 border-0">
                 <Card.Body>
                   <div className="mb-3">
                     <img
@@ -40,8 +40,8 @@ const Features = () => {
                       height={32}
                     />
                   </div>
-                  <Card.Title>{feature.title}</Card.Title>
-                  <Card.Text>{feature.text}</Card.Text>
+                  <Card.Title className="fw-bold fs-5">{feature.title}</Card.Title>
+                  <Card.Text className="text-muted">{feature.text}</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
