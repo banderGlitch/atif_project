@@ -1,0 +1,40 @@
+.custom-header {
+    width: 85%;
+    height: 128px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-link-custom {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 0.14px;
+    color: #000000; /* Adjust to match design */
+    padding: 0.5rem 1rem;
+  }
+  .login-button-custom {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 0.14px;
+    width: 138px;
+    border-radius: 0;
+    height: 43px;
+    padding: 10px 16px;
+    border: 1px solid #1E1E1E; /* Figma border color */
+    color: #1E1E1E;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .login-button-custom:hover {
+    background-color: #1E1E1E;
+    color: white;
+  }

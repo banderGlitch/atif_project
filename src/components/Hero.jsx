@@ -5,7 +5,7 @@ import PlayIcon from '../assets/svg/PlayIcon';
 import HeroImage from '../assets/icons/heroicons/HeroImg_1.png';
 const Hero = () => {
     return (
-        <section className="bg-light py-5">
+        <section className="py-5">
             <Container>
                 <Row className="align-items-center">
                     <Col md={7} lg={7} xl={7}>
