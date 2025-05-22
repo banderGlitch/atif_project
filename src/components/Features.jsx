@@ -1,55 +1,99 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import './Styles/FeatureStyle.css';
+import ArrowIcon from '../assets/svg/arrowIcon';
+import LayoutContainer from './LayoutContainer';
 
 const features = [
-  {
-    title: 'Affordable Pricing, No Hidden Fees',
-    text: 'Skip traditional valuations costing $10,000+. Get a professional valuation report starting at $199 — 90% cheaper than industry standards.',
-  },
-  {
-    title: '24-Hour Valuation Report',
-    text: 'Submit details via our user-friendly valuation dashboard and receive insights within a day.',
-  },
-  {
-    title: 'Expert-Curated Insights',
-    text: 'By combining AI and human expertise, we deliver customized valuation reports for fundraising, M&A, or strategic decisions.',
-  },
+    {
+        title: 'Affordable Pricing, No Hidden Fees',
+        description:
+            'Skip traditional valuations costing $10,000+. Get a professional valuation report starting at $109 — 90% cheaper than industry standards.',
+    },
+    {
+        title: '24-Hour Valuation Report',
+        description:
+            'Submit details via our user-friendly valuation dashboard and receive insights within a day.',
+    },
+    {
+        title: 'Expert-Curated Insights',
+        description:
+            'By combining AI and human expertise, we deliver customized valuation reports for fundraising, M&A, or strategic decisions.',
+    },
 ];
 
-const Features = () => {
-  return (
-    <section className="py-5 bg-white">
-      <Container>
-        <div className="text-center mb-5">
-          <h6 className="text-muted text-uppercase">How It Works</h6>
-          <h2 className="fw-bold">Fast & Transparent Online Business Valuation Tool</h2>
-          <p className="text-muted">
-            From data input to precise valuation results, Clybourne’s platform streamlines the process for startups and established businesses alike.
-          </p>
-        </div>
-        <Row>
-          {features.map((feature, idx) => (
-            <Col md={4} className="mb-4" key={idx}>
-              <Card className="shadow-sm h-100 p-3 border-0">
-                <Card.Body>
-                  <div className="mb-3">
-                    <img
-                      src="https://via.placeholder.com/40"
-                      alt="icon"
-                      width={32}
-                      height={32}
-                    />
-                  </div>
-                  <Card.Title className="fw-bold fs-5">{feature.title}</Card.Title>
-                  <Card.Text className="text-muted">{feature.text}</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </section>
-  );
+const FeaturesSection = () => {
+    return (
+        <section style={{ backgroundColor: '#F9F9F9', padding: '80px 0' }}>
+            <LayoutContainer>
+                <Row className="justify-content-center">
+                    <Col xs={12} lg={10}>
+                        <p className="text-decoration-underline text-dark mb-1" style={{
+                            fontFamily: "'Montserrat', sans-serif",
+                            fontSize: '18px',
+                            lineHeight: '28px',
+                            letterSpacing: '0.18px',
+                            color: '#1E1E1E',
+                            marginTop: '1rem',
+                        }}>
+                            How It Works
+                        </p>
+                        <h2
+                            className="text-main-heading mb-3"
+                            style={{
+                                fontFamily: 'Teko, sans-serif',
+                                fontSize: '36px',
+                                color: '#233977',
+                                lineHeight: '42px',
+                                fontWeight: '600px',
+                            }}
+                        >
+                            Fast & Transparent Online <br />
+                            Business Valuation Tool
+                        </h2>
+                        <p
+                            className="text-body"
+                            style={{
+                                fontFamily: "'Montserrat', sans-serif",
+                            fontSize: '18px',
+                            lineHeight: '28px',
+                            letterSpacing: '0.18px',
+                            color: '#1E1E1E',
+                            marginTop: '1rem',
+                            }}
+                        >
+                            From data input to precise valuation results, Clybourne’s platform streamlines <br/> the process
+                            for startups and established businesses alike.
+                        </p>
+
+                        <Row className="gx-4 gy-4">
+                            {features.map((item, idx) => (
+                                <Col md={4} key={idx}>
+                                    <FeatureCard icon={ArrowIcon} title={item.title} description={item.description} />
+                                </Col>
+                            ))}
+                        </Row>
+                    </Col>
+                </Row>
+            </LayoutContainer>
+        </section>
+    );
 };
 
-export default Features;
+export default FeaturesSection;
+
+
+
+
+const FeatureCard = ({ icon: Icon, title, description }) => {
+    return (
+        <div className="feature-card">
+            <div className="icon-container">
+                <Icon />
+            </div>
+            <h5 className="feature-title">{title}</h5>
+            <p className="feature-desc">{description}</p>
+        </div>
+    );
+};
+

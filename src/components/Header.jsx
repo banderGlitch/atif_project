@@ -2,8 +2,10 @@ import React from 'react'
 import { Container, Navbar, Nav, Button } from 'react-bootstrap';
 import Logo from '../assets/icons/headersicons/HeaderLogoComp.png';
 import './Styles/HeaderStyle.css';
+import LayoutContainer from './LayoutContainer';
 export default function Header() {
     return (
+        <LayoutContainer>
         <header className="custom-header">
             <Navbar expand="lg" className="w-100" bg="white">
                 <Container fluid className="d-flex justify-content-between align-items-center">
@@ -25,5 +27,6 @@ export default function Header() {
                 </Container>
             </Navbar>
         </header>
+        </LayoutContainer>
     )
 }

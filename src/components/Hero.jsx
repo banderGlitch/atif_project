@@ -4,11 +4,12 @@ import './Styles/HeroStyle.css';
 import PlayIcon from '../assets/svg/PlayIcon';
 import HeroImage from '../assets/icons/heroicons/HeroImg_1.png';
 import SocialBar from './SocialBar';
+import LayoutContainer from './LayoutContainer';
 const Hero = () => {
     return (
         <section className="py-5">
-            <Container fluid>
-                <Row className="justify-content-center gap-3">
+            <LayoutContainer>
+                <Row className="justify-content-center">
                     {/* Left Column: SocialBar */}
                     <Col xs="auto" className="d-none d-lg-flex justify-content-center">
                         <SocialBar />
@@ -83,7 +84,7 @@ const Hero = () => {
                         </Row>
                     </Col>
                 </Row>
-            </Container>
+            </LayoutContainer>
         </section>
     );
 };
