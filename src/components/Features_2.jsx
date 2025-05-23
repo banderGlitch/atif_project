@@ -55,6 +55,7 @@ export default function Features_2() {
                 <p className="approach-label">
                     Our Valuation Approach
                 </p>
+                <hr style={{width: "242px", background: "#FFFFFF", mixBlendMode: "normal", opacity: "0.5", margin: "0 auto", position: "relative", bottom: "10px"}}></hr>
                 <h2 className="approach-title">
                     Valuing More Than Numbers:
                 </h2>

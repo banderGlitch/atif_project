@@ -11,6 +11,7 @@ export default function PricingSection() {
         {/* LEFT COLUMN */}
         <Col md={6}>
           <p className="pricing-label">Pricing</p>
+          <hr style={{width: "75px", background: "#FFFFFF", mixBlendMode: "normal", opacity: "0.5"}}></hr>
           <h2 className="pricing-heading">
             Affordable <br />
             Business Valuation <br />
