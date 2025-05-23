@@ -6,19 +6,37 @@ import LayoutContainer from './LayoutContainer';
 
 const features = [
     {
-        title: 'Affordable Pricing, No Hidden Fees',
+        title: (
+            <>
+              Affordable Pricing <br /> No Hidden Fees
+            </>
+          ),
         description:
-            'Skip traditional valuations costing $10,000+. Get a professional valuation report starting at $109 — 90% cheaper than industry standards.',
+            <>
+            Skip traditional valuations costing<br/> $10,000+. Get a professional valuation <br/> report starting at $109 — 90% cheaper <br/> than industry standards.
+            </>
     },
     {
-        title: '24-Hour Valuation Report',
+        title: (
+            <>
+              24-Hour Valuation Report
+            </>
+          ),
         description:
-            'Submit details via our user-friendly valuation dashboard and receive insights within a day.',
+            <>
+            Submit details via our user-friendly <br/> valuation dashboard and receive  <br/> insights within a day.
+            </>
     },
     {
-        title: 'Expert-Curated Insights',
+        title: (
+            <>
+              Expert-Curated Insights
+            </>
+          ),
         description:
-            'By combining AI and human expertise, we deliver customized valuation reports for fundraising, M&A, or strategic decisions.',
+            <>
+            By combining AI and human <br/> expertise, we deliver customized <br/> valuation reports for fundraising, <br/> M&A, or strategic decisions.
+            </>
     },
 ];
 
@@ -54,7 +72,7 @@ const FeaturesSection = () => {
                         <p
                             className="text-body"
                             style={{
-                                fontFamily: "'Montserrat', sans-serif",
+                            fontFamily: "'Montserrat', sans-serif",
                             fontSize: '18px',
                             lineHeight: '28px',
                             letterSpacing: '0.18px',
