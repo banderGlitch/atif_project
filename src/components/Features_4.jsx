@@ -46,7 +46,7 @@ export default function Features_4() {
 
     return (
         <>
-        <hr style={{width: "1500px", background: "#FFFFFF", mixBlendMode: "normal", opacity: "0.5", margin: "0 auto", position: "relative", bottom: "10px"}}></hr>
+        <hr style={{width: "1740px", background: "#FFFFFF", mixBlendMode: "normal", opacity: "0.5", margin: "0 auto", position: "relative", bottom: "10px"}}></hr>
         <section className="why-section">
       <Container className="why-container">
         <Row className="align-items-center gx-5">
