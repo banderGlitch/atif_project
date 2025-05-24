@@ -1,4 +1,75 @@
+/* HeroStyle.css */
+
 .cta-button {
+  width: 186px;
+  height: 52px;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-md);
+  color: var(--white);
+  border: none;
+  border-radius: 0;
+  transition: 0.3s;
+}
+
+.cta-buy {
+  background-color: var(--primary-color);
+}
+
+.cta-talk {
+  background-color: var(--primary-green);
+}
+
+.cta-button:hover {
+  opacity: 0.9;
+}
+
+.play-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+
+.hero-subtitle {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-regular);
+  font-size: 35px;
+  line-height: 35px;
+  color: var(--primary-green);
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 71px;
+  line-height: 73.1px;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.hero-description,
+.hero-watch {
+  font-family: var(--font-primary);
+  font-size: var(--text-md);
+  line-height: 28px;
+  letter-spacing: 0.18px;
+  color: var(--text-dark);
+  margin-top: 1rem;
+}
+
+.hero-watch {
+  font-weight: var(--font-weight-regular);
+}
+
+
+
+/* .cta-button {
   width: 186px;
   height: 52px;
   font-family: "Montserrat", sans-serif;
@@ -31,4 +102,4 @@
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-}
+} */
