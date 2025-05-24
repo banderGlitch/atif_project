@@ -1,74 +1,68 @@
 :root {
-    // for font -size 
-
-
-    --heading-lg:72px;
-    --heading-md:48px;
-
+    // Font sizes
+    --heading-lg: 72px;
+    --heading-md: 48px;
     --text-xl: 42px;
-
-    /* Heading Sizes */
     --text-lg: 36px;
     --text-md: 30px;
     --text-base: 24px;
-
-    /* Body Sizes */
     --text-sm: 20px;
     --text-xs: 18px;
     --text-xxs: 16px;
-
-    /* Utility / Caption / UI */
     --text-caption: 14px;
-    --text-tiny: 12px;
+    --text-tiny: 13px;
     --text-micro: 10px;
-
-
-
-    // for maintaining spacing between different blocks 
-
+  
+    // Font weights
+    --font-weight-regular: 400;
+    --font-weight-medium: 600;
+    --font-weight-bold: 700;
+  
+    // Spacing
     --space-block-xxl: 110px;
     --space-block-xl: 80px;
     --space-block-lg: 60px;
     --space-block-md: 40px;
     --space-block-sm: 25px;
     --space-block-xs: 15px;
-
-
-    //colors
+  
+    // Colors
     --theme-blue-color: rgba(35, 57, 120, 1);
     --pure-white-color: rgba(255, 255, 255, 1);
     --teal-green-color: rgba(25, 167, 155, 1);
     --light-grey-color: rgba(250, 250, 250, 1);
-
-
-
-    // container for all pages
-    .page-sections {
-        margin-top: 20px;
-    }
-
-    //to control side padding
-    .wrap-page {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-
-    .main-heading-blue {
-        font-size: var(--heading-lg);
-        color: var(--theme-blue-color);
-        line-height: 1.01;
-        letter-spacing: 0;
-    }
-
-    .main-heading-green {
-        font-size: var(--heading-md);
-        color: var(--teal-green-color);
-        line-height: 1.01;
-        letter-spacing: 0;
-    }
-
-    .head-para {
-        font-size: var(--text-caption);
-        line-height: 1.01;
-    }
-}
+    --black-color: #1E1E1E;
+  }
+  
+  // ✅ Layout utility classes — define outside :root
+  
+  .page-sections {
+    margin-top: 20px;
+  }
+  
+  .wrap-page {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .main-heading-blue {
+    font-size: var(--heading-lg);
+    color: var(--theme-blue-color);
+    line-height: 1.01;
+    letter-spacing: 0;
+  }
+  
+  .main-heading-green {
+    font-size: var(--heading-md);
+    color: var(--teal-green-color);
+    line-height: 1.01;
+    letter-spacing: 0;
+  }
+  
+  .head-para {
+    font-size: var(--text-caption);
+    line-height: 1.01;
+  }
+  

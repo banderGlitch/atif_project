@@ -10,8 +10,11 @@
   --text-xs: 18px;
   --text-xxs: 16px;
   --text-caption: 14px;
-  --text-tiny: 12px;
+  --text-tiny: 13px;
   --text-micro: 10px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
   --space-block-xxl: 110px;
   --space-block-xl: 80px;
   --space-block-lg: 60px;
@@ -22,32 +25,35 @@
   --pure-white-color: #fff;
   --teal-green-color: #19a79b;
   --light-grey-color: #fafafa;
+  --black-color: #1e1e1e;
 }
 
-:root .page-sections {
+.page-sections {
   margin-top: 20px;
 }
 
-:root .wrap-page {
+.wrap-page {
   max-width: 90%;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-:root .main-heading-blue {
+.main-heading-blue {
   font-size: var(--heading-lg);
   color: var(--theme-blue-color);
   letter-spacing: 0;
   line-height: 1.01;
 }
 
-:root .main-heading-green {
+.main-heading-green {
   font-size: var(--heading-md);
   color: var(--teal-green-color);
   letter-spacing: 0;
   line-height: 1.01;
 }
 
-:root .head-para {
+.head-para {
   font-size: var(--text-caption);
   line-height: 1.01;
 }

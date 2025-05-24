@@ -1,0 +1,102 @@
+.hero-section {
+  .page-sections {
+    .section-1 {
+      .wrap-page {
+        display: flex;
+        flex-direction: column;
+        padding-block: var(--space-block-md);
+
+        .heading {
+          h1 {
+            font-family: 'Teko', sans-serif;
+            font-size: 71px;
+            line-height: 73.1px;
+            color: var(--theme-blue-color);
+            margin-bottom: var(--space-block-xs);
+          }
+        }
+
+        .sub-heading {
+          font-family: 'Teko', sans-serif;
+          font-weight: 400;
+          font-size: 35px;
+          line-height: 35px;
+          color: var(--teal-green-color);
+          margin-bottom: var(--space-block-xs);
+        }
+
+        .para {
+          font-family: 'Montserrat', sans-serif;
+          font-size: var(--text-xs);
+          line-height: 28px;
+          letter-spacing: 0.18px;
+          color: #1e1e1e;
+          padding-top: var(--space-block-sm);
+        }
+
+        .buttons {
+          display: flex;
+          gap: var(--space-block-xs);
+          padding-top: var(--space-block-md);
+
+          .cta-button {
+            width: 186px;
+            height: 52px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            color: white;
+            border: none;
+            border-radius: 0;
+            transition: 0.3s;
+
+            &:hover {
+              opacity: 0.9;
+            }
+
+            &.cta-talk {
+              background-color: var(--teal-green-color);
+            }
+
+            &.cta-buy {
+              background-color: var(--theme-blue-color);
+            }
+          }
+        }
+
+        .video-demo {
+          display: flex;
+          align-items: center;
+          padding-top: var(--space-block-sm);
+
+          .play-icon-wrapper {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: var(--theme-blue-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+          }
+
+          .text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: var(--text-xs);
+            color: #1e1e1e;
+          }
+        }
+
+        .hero-image {
+          padding-top: var(--space-block-md);
+
+          img {
+            border-radius: 12px;
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

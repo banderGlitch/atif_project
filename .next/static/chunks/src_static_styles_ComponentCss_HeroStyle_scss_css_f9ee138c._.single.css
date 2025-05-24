@@ -1,0 +1,97 @@
+/* [project]/src/static/styles/ComponentCss/HeroStyle.scss.css [app-client] (css) */
+.hero-section .page-sections .section-1 .wrap-page {
+  padding-block: var(--space-block-md);
+  flex-direction: column;
+  display: flex;
+}
+
+.hero-section .page-sections .section-1 .wrap-page .heading h1 {
+  color: var(--theme-blue-color);
+  margin-bottom: var(--space-block-xs);
+  font-family: Teko, sans-serif;
+  font-size: 71px;
+  line-height: 73.1px;
+}
+
+.hero-section .page-sections .section-1 .wrap-page .sub-heading {
+  color: var(--teal-green-color);
+  margin-bottom: var(--space-block-xs);
+  font-family: Teko, sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.hero-section .page-sections .section-1 .wrap-page .para {
+  font-family: Montserrat, sans-serif;
+  font-size: var(--text-xs);
+  letter-spacing: .18px;
+  color: #1e1e1e;
+  padding-top: var(--space-block-sm);
+  line-height: 28px;
+}
+
+.hero-section .page-sections .section-1 .wrap-page .buttons {
+  gap: var(--space-block-xs);
+  padding-top: var(--space-block-md);
+  display: flex;
+}
+
+.hero-section .page-sections .section-1 .wrap-page .buttons .cta-button {
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  width: 186px;
+  height: 52px;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.hero-section .page-sections .section-1 .wrap-page .buttons .cta-button:hover {
+  opacity: .9;
+}
+
+.hero-section .page-sections .section-1 .wrap-page .buttons .cta-button.cta-talk {
+  background-color: var(--teal-green-color);
+}
+
+.hero-section .page-sections .section-1 .wrap-page .buttons .cta-button.cta-buy {
+  background-color: var(--theme-blue-color);
+}
+
+.hero-section .page-sections .section-1 .wrap-page .video-demo {
+  padding-top: var(--space-block-sm);
+  align-items: center;
+  display: flex;
+}
+
+.hero-section .page-sections .section-1 .wrap-page .video-demo .play-icon-wrapper {
+  background-color: var(--theme-blue-color);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.hero-section .page-sections .section-1 .wrap-page .video-demo .text {
+  font-family: Montserrat, sans-serif;
+  font-size: var(--text-xs);
+  color: #1e1e1e;
+}
+
+.hero-section .page-sections .section-1 .wrap-page .hero-image {
+  padding-top: var(--space-block-md);
+}
+
+.hero-section .page-sections .section-1 .wrap-page .hero-image img {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=src_static_styles_ComponentCss_HeroStyle_scss_css_f9ee138c._.single.css.map*/
