@@ -12,7 +12,7 @@
         .content {
           display: flex;
           flex-direction: column;
-          gap: var(--space-block-xl);
+          gap: 300px;
 
           @media (min-width: 992px) {
             flex-direction: row;
@@ -106,13 +106,13 @@
             flex-shrink: 0; // ✅ Prevent the image container from shrinking
             max-width: 520px; // ✅ Optional: Limit image size
             margin-left: var(
-              --space-block-xl
+                    --space-block-xl
             ); // ✅ This shifts it to the right
 
             img {
               border-radius: 12px;
-              width: 100%;
-              height: auto;
+              width:  480px;
+              height: 480px;
               display: block;
               object-fit: contain;
             }

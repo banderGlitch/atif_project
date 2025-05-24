@@ -1,5 +1,4 @@
 import '../static/styles/ComponentCss/Feature_4Styles.css';
-import LayoutContainer from './LayoutContainer';
 import { Container, Row, Col } from 'react-bootstrap';
 import ArrowIcon from '../static/images/svg/arrowIcon'
 

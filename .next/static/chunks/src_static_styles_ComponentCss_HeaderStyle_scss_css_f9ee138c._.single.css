@@ -107,14 +107,15 @@
 }
 
 .header .header__drawer {
+  visibility: hidden;
+  opacity: 0;
   background-color: var(--pure-white-color);
   width: 75%;
   max-width: 300px;
   height: 100vh;
   padding: var(--space-block-sm);
-  z-index: 101;
-  transition: transform .3s;
-  display: none;
+  z-index: 999;
+  transition: transform .3s, opacity .3s;
   position: fixed;
   top: 0;
   right: 0;
@@ -123,7 +124,8 @@
 }
 
 .header .header__drawer.show {
-  display: block;
+  visibility: visible;
+  opacity: 1;
   transform: translateX(0);
 }
 

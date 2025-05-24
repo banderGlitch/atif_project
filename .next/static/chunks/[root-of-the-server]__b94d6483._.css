@@ -260,6 +260,10 @@
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --spacing: .25rem;
+    --text-xs: .75rem;
+    --text-lg: 1.125rem;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -478,6 +482,10 @@
     flex-wrap: wrap;
   }
 
+  .px-0 {
+    padding-inline: calc(var(--spacing) * 0);
+  }
+
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
   }
@@ -504,12 +512,14 @@ html, body {
   --text-lg: 36px;
   --text-md: 30px;
   --text-base: 24px;
+  --text-sm_1: 19px;
   --text-sm: 20px;
   --text-xs: 18px;
   --text-xxs: 16px;
   --text-caption: 14px;
   --text-tiny: 13px;
   --text-micro: 10px;
+  --text-x1_1: 59px;
   --font-weight-regular: 400;
   --font-weight-medium: 600;
   --font-weight-bold: 700;
@@ -670,14 +680,15 @@ html, body {
 }
 
 .header .header__drawer {
+  visibility: hidden;
+  opacity: 0;
   background-color: var(--pure-white-color);
   width: 75%;
   max-width: 300px;
   height: 100vh;
   padding: var(--space-block-sm);
-  z-index: 101;
-  transition: transform .3s;
-  display: none;
+  z-index: 999;
+  transition: transform .3s, opacity .3s;
   position: fixed;
   top: 0;
   right: 0;
@@ -686,7 +697,8 @@ html, body {
 }
 
 .header .header__drawer.show {
-  display: block;
+  visibility: visible;
+  opacity: 1;
   transform: translateX(0);
 }
 

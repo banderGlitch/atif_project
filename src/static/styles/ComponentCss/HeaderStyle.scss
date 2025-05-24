@@ -105,7 +105,8 @@
   }
 
   .header__drawer {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: fixed;
     top: 0;
     right: 0;
@@ -114,14 +115,15 @@
     height: 100vh;
     background-color: var(--pure-white-color);
     transform: translateX(100%);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     padding: var(--space-block-sm);
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 101;
+    z-index: 999; // ✅ increase to be above everything
 
     &.show {
-      display: block;
       transform: translateX(0);
+      visibility: visible;
+      opacity: 1;
     }
 
     @media (min-width: 768px) {
