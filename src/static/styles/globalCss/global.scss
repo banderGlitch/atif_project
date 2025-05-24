@@ -32,13 +32,20 @@
     --teal-green-color: rgba(25, 167, 155, 1);
     --light-grey-color: rgba(250, 250, 250, 1);
     --black-color: #1E1E1E;
+
+    --font-family-primary: 'Teko', sans-serif;
+    --font-family-secondary: 'Montserrat', sans-serif;
+
   }
   
   // ✅ Layout utility classes — define outside :root
   
   .page-sections {
-    margin-top: 20px;
+    margin-top: 40px;
   }
+
+
+
   
   .wrap-page {
     max-width: 90%;
@@ -48,9 +55,11 @@
   }
   
   .main-heading-blue {
-    font-size: var(--heading-lg);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-regular);
+    font-size: 70px;
     color: var(--theme-blue-color);
-    line-height: 1.01;
+    line-height:73.1px;
     letter-spacing: 0;
   }
   

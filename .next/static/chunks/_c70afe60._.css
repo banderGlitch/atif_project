@@ -13339,33 +13339,6 @@ textarea.form-control-lg {
 }
 
 
-/* [project]/src/static/styles/ComponentCss/SocialBar.css [app-client] (css) */
-.social-bar {
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 32px;
-  padding: 0;
-  display: flex;
-}
-
-.social-bar .line {
-  background-color: #000;
-  width: 1px;
-  height: 101px;
-}
-
-.social-bar .icon svg {
-  cursor: pointer;
-  transition: opacity .3s;
-  display: block;
-}
-
-.social-bar .icon:hover {
-  opacity: 1 !important;
-}
-
-
 /* [project]/src/static/styles/ComponentCss/HeroStyle.scss.css [app-client] (css) */
 .hero .page-sections .section-1 .hero__container {
   gap: var(--space-block-sm);
@@ -13377,7 +13350,7 @@ textarea.form-control-lg {
 }
 
 .hero .page-sections .section-1 .hero__container .content {
-  gap: var(--space-block-xl);
+  gap: var(--space-block-md);
   flex-direction: column;
   display: flex;
 }
@@ -13385,14 +13358,13 @@ textarea.form-control-lg {
 @media (width >= 992px) {
   .hero .page-sections .section-1 .hero__container .content {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
   }
 }
 
 .hero .page-sections .section-1 .hero__container .content .left {
   width: 100%;
-  padding-bottom: var(--space-block-md);
 }
 
 @media (width >= 992px) {
@@ -13402,23 +13374,12 @@ textarea.form-control-lg {
 }
 
 .hero .page-sections .section-1 .hero__container .content .left .sub-heading {
-  font-family: var(--font-family-primary);
-  font-weight: var(--font-weight-regular);
   color: var(--teal-green-color);
   margin-bottom: var(--space-block-xs);
+  font-family: Teko, sans-serif;
   font-size: 35px;
+  font-weight: 400;
   line-height: 35px;
-}
-
-.hero .page-sections .section-1 .hero__container .content .left .main-para {
-  font-family: var(--font-family-secondary);
-  font-weight: var(--font-weight-regular);
-  color: var(--black-color);
-  align-items: center;
-  margin: 0;
-  font-size: 18px;
-  line-height: 28px;
-  display: flex;
 }
 
 .hero .page-sections .section-1 .hero__container .content .left .para {
@@ -13456,10 +13417,8 @@ textarea.form-control-lg {
 }
 
 .hero .page-sections .section-1 .hero__container .content .left .video-demo {
-  align-items: center;
-  gap: var(--space-block-xs);
   padding-top: var(--space-block-sm);
-  padding-bottom: var(--space-block-sm);
+  align-items: center;
   display: flex;
 }
 
@@ -13470,22 +13429,24 @@ textarea.form-control-lg {
   align-items: center;
   width: 48px;
   height: 48px;
-  margin-right: 0;
+  margin-right: 10px;
   display: flex;
 }
 
 .hero .page-sections .section-1 .hero__container .content .right {
-  max-width: 520px;
-  margin-left: var(--space-block-xl);
-  flex-shrink: 0;
+  width: 100%;
+}
+
+@media (width >= 992px) {
+  .hero .page-sections .section-1 .hero__container .content .right {
+    width: 45%;
+  }
 }
 
 .hero .page-sections .section-1 .hero__container .content .right img {
-  object-fit: contain;
   border-radius: 12px;
   width: 100%;
   height: auto;
-  display: block;
 }
 
 
@@ -13916,4 +13877,4 @@ textarea.form-control-lg {
 }
 
 
-/*# sourceMappingURL=_a9947383._.css.map*/
+/*# sourceMappingURL=_c70afe60._.css.map*/

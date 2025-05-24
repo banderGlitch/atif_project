@@ -194,6 +194,10 @@
 @layer components;
 
 @layer utilities {
+  .visible {
+    visibility: visible;
+  }
+
   .relative {
     position: relative;
   }
@@ -216,14 +220,6 @@
 
   .flex-wrap {
     flex-wrap: wrap;
-  }
-
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
-  }
-
-  .py-5 {
-    padding-block: calc(var(--spacing) * 5);
   }
 
   .pt-16 {

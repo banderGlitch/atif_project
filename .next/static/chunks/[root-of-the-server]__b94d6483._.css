@@ -450,6 +450,10 @@
 @layer components;
 
 @layer utilities {
+  .visible {
+    visibility: visible;
+  }
+
   .relative {
     position: relative;
   }
@@ -472,14 +476,6 @@
 
   .flex-wrap {
     flex-wrap: wrap;
-  }
-
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
-  }
-
-  .py-5 {
-    padding-block: calc(var(--spacing) * 5);
   }
 
   .pt-16 {
@@ -528,10 +524,12 @@ html, body {
   --teal-green-color: #19a79b;
   --light-grey-color: #fafafa;
   --black-color: #1e1e1e;
+  --font-family-primary: "Teko", sans-serif;
+  --font-family-secondary: "Montserrat", sans-serif;
 }
 
 .page-sections {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .wrap-page {
@@ -542,10 +540,12 @@ html, body {
 }
 
 .main-heading-blue {
-  font-size: var(--heading-lg);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
   color: var(--theme-blue-color);
   letter-spacing: 0;
-  line-height: 1.01;
+  font-size: 70px;
+  line-height: 73.1px;
 }
 
 .main-heading-green {
