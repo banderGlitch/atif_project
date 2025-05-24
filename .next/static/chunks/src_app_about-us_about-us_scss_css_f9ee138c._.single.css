@@ -1,0 +1,44 @@
+/* [project]/src/app/about-us/about-us.scss.css [app-client] (css) */
+.about-us .page-sections .section-1 .wrap-page .buttons {
+  gap: var(--space-block-xs);
+  display: flex;
+}
+
+.about-us .page-sections .section-1 .wrap-page .para {
+  padding-top: var(--space-block-sm);
+}
+
+.about-us .page-sections .section-1 .wrap-page .full-text, .about-us .page-sections .section-1 .wrap-page .buttons {
+  padding-top: var(--space-block-md);
+}
+
+.about-us .page-sections .why-choose-section {
+  margin-top: var(--space-block-lg);
+  background-color: var(--theme-blue-color);
+  padding: var(--space-block-xs) 0px;
+}
+
+.about-us .page-sections .why-choose-section .wrap-page .heading h2 {
+  color: var(--pure-white-color);
+}
+
+.about-us .page-sections .why-choose-section .wrap-page .cards {
+  gap: var(--space-block-sm);
+  display: flex;
+}
+
+.about-us .page-sections .global-reach {
+  padding: var(--space-block-xs) 0px;
+}
+
+.about-us .page-sections .global-reach .wrap-page {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.about-us .page-sections .global-reach .wrap-page .left, .about-us .page-sections .global-reach .wrap-page .full-text {
+  width: 50%;
+}
+
+/*# sourceMappingURL=src_app_about-us_about-us_scss_css_f9ee138c._.single.css.map*/

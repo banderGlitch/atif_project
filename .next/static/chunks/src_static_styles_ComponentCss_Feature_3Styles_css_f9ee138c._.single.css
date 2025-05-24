@@ -1,0 +1,136 @@
+/* [project]/src/static/styles/ComponentCss/Feature_3Styles.css [app-client] (css) */
+.pricing-section {
+  background-color: #fff;
+  padding: 100px;
+}
+
+.pricing-label {
+  color: #1e1e1e;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  line-height: .5%;
+}
+
+.pricing-heading {
+  color: #233977;
+  margin-bottom: 20px;
+  font-family: Teko, sans-serif;
+  font-size: 59px;
+  font-weight: 400;
+  line-height: 59.3px;
+}
+
+.pricing-subtext {
+  color: #555;
+  letter-spacing: .18px;
+  max-width: 500px;
+  margin-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.pricing-link {
+  color: #212121;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.text-highlight {
+  color: #6894c0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  text-decoration: underline;
+}
+
+.pricing-card {
+  text-align: center;
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 318px;
+  height: 419px;
+  padding: 24px;
+  transition: transform .3s;
+  display: flex;
+  box-shadow: 0 6px 20px #0000000f;
+}
+
+.pricing-card.highlight {
+  color: #fff;
+  background-color: #1aa79c;
+}
+
+.pricing-card_subdued {
+  text-align: center;
+  background-color: #e2e2e2;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 310px;
+  height: 365.79px;
+  padding: 24px;
+  transition: transform .3s;
+  display: flex;
+  position: relative;
+  top: 30px;
+  box-shadow: 0 6px 20px #0000000f;
+}
+
+.card-title {
+  margin-bottom: 16px;
+  font-family: Montserrat, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40.5px;
+}
+
+.card-sub {
+  color: inherit;
+  margin-bottom: 4px;
+  font-family: Montserrat, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 23.5px;
+}
+
+.card-price {
+  margin-top: 10px;
+  margin-bottom: 24px;
+  font-family: Montserrat, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.get-started-btn {
+  color: #212121;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  align-self: center;
+  width: 169px;
+  height: 48px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: background-color .2s;
+}
+
+.get-started-btn:hover {
+  background-color: #e5e5e5;
+}
+
+.hr-line {
+  mix-blend-mode: normal;
+  opacity: .5;
+  background: #fff;
+  width: 161px;
+  height: 1px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=src_static_styles_ComponentCss_Feature_3Styles_css_f9ee138c._.single.css.map*/

@@ -1,0 +1,54 @@
+.footer{
+    background-color: var(--theme-blue-color);
+    .form-section{
+        text-align: center;
+        .contact-us{
+            font-weight: 400;
+            color: var(--pure-white-color);
+            padding: 4px 10px;
+            border-bottom: 1px solid var(--pure-white-color);
+        }
+        .need-help{
+           font-weight: 600;
+           color: var(--pure-white-color);
+           font-size: var(--text-md);
+        }
+        .simplify{
+            font-weight: 600;
+             color: var(--teal-green-color);
+             font-size: var(--text-lg);
+        }
+        p.para{
+            font-weight: 400;
+            color: var(--pure-white-color);
+            font-size: var(--text-caption);
+        }
+
+        .form-fields{
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: var(--space-block-xs);
+                input{
+                    outline: none;
+                    border: 1px solid var(--pure-white-color);
+                    padding: 2px 3px;
+                }
+                input::placeholder {
+                    color: #888;
+                    font-size: 14px;
+                  }
+                  
+                textarea{
+                    outline: none;
+                    border: 1px solid var(--pure-white-color);
+                    padding: 2px 3px;
+                }
+                textarea::placeholder {
+                    color: #888;
+                    font-size: 14px;
+                  }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+/* [project]/src/static/styles/globalCss/global.scss.css [app-client] (css) */
+:root {
+  --heading-lg: 72px;
+  --heading-md: 48px;
+  --text-xl: 42px;
+  --text-lg: 36px;
+  --text-md: 30px;
+  --text-base: 24px;
+  --text-sm: 20px;
+  --text-xs: 18px;
+  --text-xxs: 16px;
+  --text-caption: 14px;
+  --text-tiny: 12px;
+  --text-micro: 10px;
+  --space-block-xxl: 110px;
+  --space-block-xl: 80px;
+  --space-block-lg: 60px;
+  --space-block-md: 40px;
+  --space-block-sm: 25px;
+  --space-block-xs: 15px;
+  --theme-blue-color: #233978;
+  --pure-white-color: #fff;
+  --teal-green-color: #19a79b;
+  --light-grey-color: #fafafa;
+}
+
+:root .page-sections {
+  margin-top: 20px;
+}
+
+:root .wrap-page {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+:root .main-heading-blue {
+  font-size: var(--heading-lg);
+  color: var(--theme-blue-color);
+  letter-spacing: 0;
+  line-height: 1.01;
+}
+
+:root .main-heading-green {
+  font-size: var(--heading-md);
+  color: var(--teal-green-color);
+  letter-spacing: 0;
+  line-height: 1.01;
+}
+
+:root .head-para {
+  font-size: var(--text-caption);
+  line-height: 1.01;
+}
+
+/*# sourceMappingURL=src_static_styles_globalCss_global_scss_css_f9ee138c._.single.css.map*/

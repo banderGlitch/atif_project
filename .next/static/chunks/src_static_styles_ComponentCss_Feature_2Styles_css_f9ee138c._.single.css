@@ -1,0 +1,139 @@
+/* [project]/src/static/styles/ComponentCss/Feature_2Styles.css [app-client] (css) */
+.approach-section {
+  color: #fff;
+  text-align: center;
+  background-color: #233977;
+  padding: 80px 0;
+}
+
+.approach-label {
+  color: #fff;
+  margin-bottom: 8px;
+  font-family: Montserrat, sans-serif;
+  font-size: 19px;
+}
+
+.approach-title {
+  color: #fff;
+  margin-bottom: 0;
+  font-family: Teko, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.approach-highlighted {
+  color: #19998d;
+  margin-bottom: 1rem;
+  font-family: Teko, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.approach-subtext {
+  color: #d1d1d1;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+}
+
+.approach-card {
+  color: #233977;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  width: 279.2px;
+  max-width: 279.2px;
+  height: 279.2px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+}
+
+.approach-card:hover {
+  transform: translateY(-4px);
+}
+
+.approach-card.highlight {
+  color: #fff;
+  background-color: #1aa79c;
+}
+
+.icon-box {
+  background-color: #233977;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  display: flex;
+}
+
+.approach-card.highlight .icon-box {
+  background-color: #fff;
+}
+
+.approach-text {
+  color: #233977;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 32.3px;
+}
+
+.approach-card.highlight .approach-text {
+  letter-spacing: 0;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.know-more-btn {
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  background-color: #0000;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  align-self: center;
+  margin-top: auto;
+  padding: 6px 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color .2s, color .2s;
+}
+
+.know-more-btn:hover {
+  background-color: #ffffff26;
+}
+
+.icon-container {
+  background-color: #233977;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.card-body-wrapper {
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+  gap: 16px;
+  display: flex;
+}
+
+/*# sourceMappingURL=src_static_styles_ComponentCss_Feature_2Styles_css_f9ee138c._.single.css.map*/

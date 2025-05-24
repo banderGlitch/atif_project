@@ -1,0 +1,37 @@
+/* [project]/src/static/styles/ComponentCss/HeroStyle.css [app-client] (css) */
+.cta-button {
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  width: 186px;
+  height: 52px;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.cta-buy {
+  background-color: #233978;
+}
+
+.cta-talk {
+  background-color: #1aa79c;
+}
+
+.cta-button:hover {
+  opacity: .9;
+}
+
+.play-icon-wrapper {
+  background-color: #233978;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  display: flex;
+}
+
+/*# sourceMappingURL=src_static_styles_ComponentCss_HeroStyle_css_f9ee138c._.single.css.map*/

@@ -1,0 +1,27 @@
+/* [project]/src/static/styles/ComponentCss/SocialBar.css [app-client] (css) */
+.social-bar {
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 32px;
+  padding: 0;
+  display: flex;
+}
+
+.social-bar .line {
+  background-color: #000;
+  width: 1px;
+  height: 101px;
+}
+
+.social-bar .icon svg {
+  cursor: pointer;
+  transition: opacity .3s;
+  display: block;
+}
+
+.social-bar .icon:hover {
+  opacity: 1 !important;
+}
+
+/*# sourceMappingURL=src_static_styles_ComponentCss_SocialBar_css_f9ee138c._.single.css.map*/

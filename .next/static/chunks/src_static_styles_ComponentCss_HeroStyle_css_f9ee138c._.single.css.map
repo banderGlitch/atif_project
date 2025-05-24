@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/static/styles/ComponentCss/HeroStyle.css"],"sourcesContent":[".cta-button {\n  width: 186px;\n  height: 52px;\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 600;\n  font-size: 18px;\n  color: white;\n  border: none;\n  border-radius: 0px;\n  transition: 0.3s;\n}\n\n.cta-buy {\n  background-color: #233978;\n}\n\n.cta-talk {\n  background-color: #1aa79c;\n}\n\n.cta-button:hover {\n  opacity: 0.9;\n}\n\n.play-icon-wrapper {\n  width: 48px;\n  height: 48px;\n  border-radius: 50%;\n  background-color: #233978;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-right: 10px;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;;AAYA;;;;AAIA;;;;AAIA;;;;AAIA"}}]
+}
