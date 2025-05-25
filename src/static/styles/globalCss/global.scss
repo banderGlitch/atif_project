@@ -1,29 +1,25 @@
+@import "../../font/stylesheet.css";
+
 :root {
-    // Font sizes
-    --heading-lg: 72px;
-    --heading-md: 48px;
-    --text-xl: 42px;
-    --text-lg_1: 47px;
-    --text-lg_2: 59px;
-    --text-lg: 36px;
-    --text-md: 30px;
-    --text-base: 24px;
-    --text-sm_1:19px;
-    --text-sm: 20px;
-    --text-xs: 18px;
-    --text-xxs: 16px;
-    --text-caption: 14px;
-    --text-tiny: 13px;
-    --text-micro: 10px;
-    --text-x1_1:59px;
-  
-    // Font weights
-    --font-weight-regular: 400;
-    --font-weight-medium: 600;
-    --font-weight-bold: 700;
-  
-    // Spacing
-    --space-block-xxxs: 500px;
+    // for font -size 
+
+
+    --heading-lg:110px;
+    --heading-md:62px;
+    --heading-sm: 36px;
+
+
+    /* Heading Sizes */
+    --text-lg: 32px;
+    --text-md: 28px;
+    --text-sm: 18px;
+    /* Utility / Caption / UI */
+    --text-caption: 12px;
+
+
+
+    // for maintaining spacing between different blocks 
+
     --space-block-xxl: 110px;
     --space-block-xl: 80px;
     --space-block-lg: 60px;
@@ -37,48 +33,201 @@
     --pure-white-color: rgba(255, 255, 255, 1);
     --teal-green-color: rgba(25, 167, 155, 1);
     --light-grey-color: rgba(250, 250, 250, 1);
-    --light-grey-color-2: rgba(230, 230, 230, 1);
-    --black-color: #1E1E1E;
-
-    --font-family-primary: 'Teko', sans-serif;
-    --font-family-secondary: 'Montserrat', sans-serif;
-
-  }
-  
-  // ✅ Layout utility classes — define outside :root
-  
-  .page-sections {
-    margin-top: 40px;
-  }
+    --text-grey-color:rgba(5, 19, 29, 1);
 
 
 
-  
-  .wrap-page {
-    max-width: 90%;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    // container for all pages
+    .page-sections {
+        margin-top: 20px;
+    }
+
+    //to control side padding
+    .wrap-page {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .main-heading-blue {
+        font-size: var(--heading-lg);
+        color: var(--theme-blue-color);
+        line-height: 1.01;
+        letter-spacing: 0;
+        font-family: 'InterMedium';
+    }
+
+    .main-heading-green {
+        font-size: var(--heading-md);
+        color: var(--teal-green-color);
+        line-height: 1.01;
+        letter-spacing: 0;
+        font-family: 'InterMedium';
+    }
+
+    .head-para {
+        font-size: var(--text-caption);
+        line-height: 1.01;
+    }
+}
+
+
+@media (max-width: 1720px) {
+   :root {
+    --heading-lg: 100px;
+    --heading-md: 60px;
+    --heading-sm: 38px;
+    --text-lg: 34px;
+    --text-md: 28px;
+    --text-tmd:22px;
+     --text-sm: 16px;
+
+     //section spacing
+      --space-block-xxl: 100px;
+    --space-block-xl: 75px;
+    --space-block-lg: 65px;
+    --space-block-md: 35px;
+    --space-block-sm: 22px;
+    --space-block-xs: 14px;
   }
-  
-  .main-heading-blue {
-    font-family: var(--font-family-primary);
-    font-weight: var(--font-weight-regular);
-    font-size: 70px;
-    color: var(--theme-blue-color);
-    line-height:73.1px;
-    letter-spacing: 0;
+}
+
+@media (max-width: 1600px) {
+  :root {
+    --heading-lg: 86px;
+    --heading-md: 52px;
+    --heading-sm: 32px;
+    --text-lg: 26px;
+    --text-md: 22px;
+    --text-tmd:20px;
+    --text-sm: 14px;
+
+    //section spacing
+      --space-block-xxl: 90px;
+    --space-block-xl: 70px;
+    --space-block-lg: 60px;
+    --space-block-md: 32px;
+    --space-block-sm: 20px;
+    --space-block-xs: 13px;
   }
-  
-  .main-heading-green {
-    font-size: var(--heading-md);
-    color: var(--teal-green-color);
-    line-height: 1.01;
-    letter-spacing: 0;
+}
+
+@media (max-width: 1440px) {
+  :root {
+    --heading-lg: 72px;
+    --heading-md: 48px;
+    --heading-sm: 28px;
+    --text-lg: 24px;
+    --text-md: 20px;
+    --text-tmd:18px;
+     --text-sm: 12px;
+
+     //section spacing
+      --space-block-xxl: 85px;
+    --space-block-xl: 65px;
+    --space-block-lg: 55px;
+    --space-block-md: 30px;
+    --space-block-sm: 18px;
+    --space-block-xs: 12px;
   }
-  
-  .head-para {
-    font-size: var(--text-caption);
-    line-height: 1.01;
+}
+@media (max-width: 1366px) {
+    :root {
+        --heading-lg: 60px;
+        --heading-md: 42px;
+        --heading-sm: 26px;
+        --text-lg: 22px;
+        --text-md: 18px;
+        --text-tmd:17px;
+        --text-sm: 12px;
+
+        //section spacing
+      --space-block-xxl: 80px;
+    --space-block-xl: 60px;
+    --space-block-lg: 50px;
+    --space-block-md: 28px;
+    --space-block-sm: 17px;
+    --space-block-xs: 12px;
+    }
+}
+
+
+@media (max-width: 1023px) {
+  :root {
+    --heading-lg: 58px;
+    --heading-md: 38px;
+    --heading-sm: 24px;
+    --text-lg: 20px;
+    --text-md: 17px;
+    --text-md: 16px;
+     --text-sm: 11px;
+
+     //section spacing
+      --space-block-xxl: 75px;
+    --space-block-xl: 55px;
+    --space-block-lg: 45px;
+    --space-block-md: 25px;
+    --space-block-sm: 16px;
+    --space-block-xs: 12px;
   }
-  
+}
+
+
+@media (max-width: 767px) {
+:root {
+    --heading-lg: 48px;
+    --heading-md: 34px;
+    --heading-sm: 22px;
+    --text-lg: 18px;
+    --text-md: 16px;
+    --text-md: 14px;
+     --text-sm: 10px;
+
+     //section spacing
+      --space-block-xxl: 65px;
+    --space-block-xl: 45px;
+    --space-block-lg: 35px;
+    --space-block-md: 22px;
+    --space-block-sm: 15px;
+    --space-block-xs: 10px;
+  }
+}
+
+
+@media (max-width: 600px) {
+ :root {
+    --heading-lg: 40px;
+    --heading-md: 30px;
+    --heading-sm: 20px;
+    --text-lg: 16px;
+    --text-md: 14px;
+    --text-md: 12px;
+     --text-sm: 9px;
+
+    //  /section spacing
+      --space-block-xxl: 45px;
+    --space-block-xl: 35px;
+    --space-block-lg: 30px;
+    --space-block-md: 18px;
+    --space-block-sm: 12px;
+    --space-block-xs: 8px;
+  }
+}
+@media (max-width: 400px) {
+  :root {
+    --heading-lg: 32px;
+    --heading-md: 26px;
+    --heading-sm: 18px;
+    --text-lg: 14px;
+    --text-md: 13px;
+    --text-md: 10px;
+     --text-sm: 8px;
+
+     //  /section spacing
+      --space-block-xxl: 40px;
+    --space-block-xl: 30px;
+    --space-block-lg: 25px;
+    --space-block-md: 16px;
+    --space-block-sm: 10px;
+    --space-block-xs: 8px;
+  }
+}

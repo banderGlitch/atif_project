@@ -2,6 +2,8 @@ import { Montserrat, Teko } from 'next/font/google'
 import "./globals.css";
 import "../static/styles/globalCss/global.scss"
 import Header from "@/components/Header";
+import React from "react";
+import "./about-us/about-us.scss"
 
 const montserrat = Montserrat({
   subsets: ['latin'],
