@@ -3,11 +3,14 @@
     padding: var(--space-block-xs);
     border-radius: 12px;
     h2{
+      font-family: var(--font-family-tertiary);
       font-size: var(--heading-sm);
+      font-weight: var(--font-weight-primary);
       color: var(--teal-green-color);
     }
     p{
         font-size: var(--text-caption);
         color: var(--pure-white-color);
-    }
+        font-family: var(--font-family-secondary) ;
+  }
 }

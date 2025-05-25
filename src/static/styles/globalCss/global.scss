@@ -11,8 +11,11 @@
 
     /* Heading Sizes */
     --text-lg: 32px;
+
     --text-md: 28px;
+    --text-md_1: 20px;
     --text-sm: 18px;
+    --text-sm_1: 13px;
     /* Utility / Caption / UI */
     --text-caption: 12px;
 
@@ -34,6 +37,20 @@
     --teal-green-color: rgba(25, 167, 155, 1);
     --light-grey-color: rgba(250, 250, 250, 1);
     --text-grey-color:rgba(5, 19, 29, 1);
+    --text-black-color: rgba(30, 30, 30, 1);
+
+
+
+    //font-family
+    --font-family-primary: 'Teko', sans-serif;
+    --font-family-secondary: 'Montserrat', sans-serif;
+    --font-family-tertiary: 'InterMedium', sans-serif;
+
+    //font-weight
+    --font-weight-primary: 400;
+    --font-weight-secondary: 500;
+    --font-weight-tertiary: 600;
+
 
 
 
@@ -44,24 +61,32 @@
 
     //to control side padding
     .wrap-page {
-        max-width: 90%;
+        max-width: 90%; 
+        padding-top: var(--space-block-xl);
         margin: 0 auto;
     }
 
+
+
     .main-heading-blue {
-        font-size: var(--heading-lg);
+        font-size: 71px;
         color: var(--theme-blue-color);
-        line-height: 1.01;
+        line-height: 100%;
         letter-spacing: 0;
-        font-family: 'InterMedium';
+        font-family: var(--font-family-primary);
+        font-weight: var(--font-weight-primary);
     }
 
+
+
     .main-heading-green {
-        font-size: var(--heading-md);
+      font-family: var(--font-family-primary);
+      font-weight: var(--font-weight-primary);
+        font-size: 47px;
         color: var(--teal-green-color);
-        line-height: 1.01;
+        line-height: 100%;
         letter-spacing: 0;
-        font-family: 'InterMedium';
+
     }
 
     .head-para {

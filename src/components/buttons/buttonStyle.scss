@@ -1,0 +1,23 @@
+.cta-button {
+    width: 186px;
+    height: 52px;
+    font-family: var(--font-family-tertiary);
+    font-weight: var(--font-weight-primary);
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 0;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &.cta-talk {
+      background-color: var(--teal-green-color);
+    }
+
+    &.cta-buy {
+      background-color: var(--theme-blue-color);
+    }
+  }

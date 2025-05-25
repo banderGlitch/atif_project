@@ -1,11 +1,18 @@
 import { BlueButton } from '@/components/buttons/BlueButton'
 import GreenButton from '@/components/buttons/GreenButton'
 import React from 'react'
+import Image from 'next/image';
 import "./about-us.scss"
 import WhyChooseClyborn from '@/components/cards/WhyChooseClyborn'
 import LeadersCards from '@/components/cards/LeadersCards'
 import Underline from '@/components/cards/Underline'
 import HowWork from '@/components/cards/HowWork'
+import Madalen from '@/static/images/svg/Madalen'
+import Horizon from '@/static/images/svg/Horizon'   
+import Xen from '@/static/images/svg/Xen'
+
+import vectorSmartImg from '../../../public/images/vectorSmartDecorator.png'   
+
 
 const page = () => {
     return (
@@ -130,6 +137,9 @@ const page = () => {
 
                 {/* Meet Our Visionaries */}
                 <div className='meet-visionaries'>
+                    <div className="visionary-svg">
+                    <Image src={vectorSmartImg} alt="vectorSmart" width={1000} height={1000} />
+                    </div>
                     <div className='wrap-page'>
                         <div className='heading'>
                             <h2 className='main-heading-blue'>Meet Our Visionaries</h2>
@@ -138,7 +148,7 @@ const page = () => {
                             <p className=' main-heading-green '>Leaders Who Inspire Confidence</p>
                         </div>
                         <div className='full-text'>
-                            <p>We redefine the valuation experience by combining:</p>
+                            <p>Behind Clybourne is a team of experts with decades of experience in business valuation and technology. Together, they ensure you get insights that matter.</p>
                         </div>
 
                         <div className='cards'>
@@ -222,18 +232,29 @@ const page = () => {
                     </div>
                 </div>
 
-                 {/*\industry-leaders */}
+                {/*\industry-leaders */}
                 <div className='industry-leaders'>
                     <div className='wrap-page'>
-                            <div className='heading'>
-                                <h1 className='main-heading-blue'>Trusted by Industry Leaders </h1>
-                            </div>
-                            <div className='para '>
-                                <p className='main-heading-green'>Proven Results Across Businesses</p>
-                            </div>
-                            <div className='full-text'>
-                                <p>From startups to enterprises, Clybourne empowers organizations to make informed, strategic decisions. </p>
-                            </div>
+                        <div className='heading'>
+                            <h1 className='main-heading-blue'>Trusted by Industry Leaders </h1>
+                        </div>
+                        <div className='para '>
+                            <p className='main-heading-green'>Proven Results Across Businesses</p>
+                        </div>
+                        <div className='full-text'>
+                            <p>From startups to enterprises, Clybourne empowers organizations to make informed, strategic decisions. </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="brand-logos-section">
+                    <div className="wrap-page">
+                        <div className="logos-wrapper">
+                            <Madalen />
+                            <Horizon />
+                            <Xen />
+                            <Madalen />
+                            <Horizon />
+                        </div>
                     </div>
                 </div>
             </div>

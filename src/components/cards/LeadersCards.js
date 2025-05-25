@@ -8,14 +8,18 @@ const LeadersCards = ({ item }) => {
       <div className='photo'>
         <Image
           src={LeaderImage}
-          alt={item.phto}
+          alt={item?.phto}
           width={200}
           height={200}
           className='leader-photo'
         />
       </div>
-      <div className='name'>{item.name}</div>
-      <div className='profile'>{item.profile}</div>
+      <div className="name">
+        <p style={{color: "var(--theme-blue-color)", fontSize: "16px", fontWeight: "var(--font-weight-primary)"}}>{item.name}</p>
+      </div>
+      <div className='profile'>
+        <p style={{color: "var(--text-grey-color)", fontSize: "12px", fontWeight: "var(--font-weight-primary)"}}>{item.profile}</p>
+      </div>
     </div>
   );
 };

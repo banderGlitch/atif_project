@@ -1,3 +1,21 @@
-.leader-card{
-    
-}
+.leader-card {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+  }
+
+  .name p {
+    font-size: 16px;
+    color: var(--theme-blue-color);
+    font-weight: var(--font-weight-primary);
+    margin: 0;
+  }
+
+  .profile {
+    font-size: 12px;
+    color: var(--text-grey-color);
+    font-weight: var(--font-weight-primary);
+  }

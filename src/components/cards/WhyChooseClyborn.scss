@@ -1,14 +1,44 @@
-.WhyChooseClyborn-card{
+.whychoose-card {
     background: var(--pure-white-color);
     padding: var(--space-block-sm);
     border-radius: 12px;
-    .icon{
-
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-block-xs);
+    box-shadow: 0 0 0 1px transparent;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      box-shadow: 0 0 0 2px var(--theme-blue-color);
     }
-    .feature-title{
-        padding-top: var(--space-block-sm);
-        padding-top: var(--space-block-xs);
-        font-size: var(--text-base);
-        color: var(--theme-blue-color);
-    }
-}
+  }
+  
+  .icon-title-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-block-sm);
+  }
+  
+  .icon {
+    background-color: var(--theme-blue-color);
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .feature-title {
+    margin: 0;
+    font-size: 18px;
+    color: var(--theme-blue-color);
+  }
+  
+  .feature-desc {
+    color: var(--text-grey-color);
+    margin: 0;
+    font-size: var(--text-sm_1);
+  }
+  
