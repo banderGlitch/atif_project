@@ -1,0 +1,176 @@
+/* [project]/src/static/styles/ComponentCss/Feature_3Styles.scss.css [app-client] (css) */
+.pricing-section {
+  padding: var(--space-block-xl) 0;
+  background-color: #fff;
+  height: 664px;
+}
+
+.pricing-section .wrap-page {
+  gap: var(--space-block-xl);
+  flex-direction: column;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+@media (width >= 992px) {
+  .pricing-section .wrap-page {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
+.pricing-section .left-content {
+  flex: 1;
+}
+
+.pricing-section .left-content .pricing-label {
+  font-family: var(--font-family-secondary);
+  font-size: var(--text-xs);
+  color: var(--black-color);
+  line-height: 0;
+}
+
+.pricing-section .left-content hr {
+  mix-blend-mode: normal;
+  opacity: .5;
+  width: 75px;
+  margin-block: var(--space-block-xs);
+  background: #fff;
+}
+
+.pricing-section .left-content .pricing-heading {
+  font-family: var(--font-family-primary);
+  font-size: var(--text-lg_1);
+  color: var(--theme-blue-color);
+  letter-spacing: 0;
+  line-height: 59.5px;
+  font-weight: var(--font-weight-regular);
+  margin-bottom: var(--space-block-sm);
+}
+
+.pricing-section .left-content .pricing-subtext {
+  font-family: var(--font-family-secondary);
+  font-size: var(--text-xs);
+  color: #555;
+  letter-spacing: .18px;
+  max-width: 500px;
+  margin-bottom: var(--space-block-sm);
+  line-height: 1.6;
+}
+
+.pricing-section .left-content .pricing-link {
+  font-family: var(--font-family-secondary);
+  font-size: var(--text-tiny);
+  font-weight: var(--font-weight-regular);
+  color: var(--black-color);
+}
+
+.pricing-section .left-content .pricing-link .text-highlight {
+  color: #6894c0;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-tiny);
+  text-decoration: underline;
+}
+
+.pricing-section .right-content {
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  gap: 0;
+  display: flex;
+}
+
+.pricing-section .right-content .pricing-card, .pricing-section .right-content .pricing-card_subdued {
+  width: 318px;
+  padding: var(--space-block-sm);
+  text-align: center;
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform .3s;
+  display: flex;
+  box-shadow: 0 6px 20px #0000000f;
+}
+
+.pricing-section .right-content .pricing-card.highlight {
+  background-color: var(--teal-green-color);
+  color: var(--pure-white-color);
+  width: 318px;
+  height: 419px;
+}
+
+.pricing-section .right-content .pricing-card.highlight .hr-line {
+  background: var(--pure-white-color);
+  width: 165px;
+  height: 1px;
+  margin: 0 auto;
+}
+
+.pricing-section .right-content .pricing-card.highlight .card-sub, .pricing-section .right-content .pricing-card.highlight .card-price {
+  color: var(--pure-white-color);
+}
+
+.pricing-section .right-content .pricing-card_subdued {
+  background-color: var(--light-grey-color-2);
+  opacity: .7;
+  width: 310px;
+  height: 365.79px;
+  position: relative;
+  top: 30px;
+}
+
+.pricing-section .right-content .pricing-card_subdued .hr-line {
+  background: var(--pure-white-color);
+  width: 165px;
+  height: 1px;
+  margin: 0 auto;
+}
+
+.pricing-section .right-content .pricing-card_subdued .card-price {
+  color: var(--black-color);
+}
+
+.pricing-section .right-content .card-title {
+  font-family: var(--font-family-secondary);
+  margin-bottom: var(--space-block-xs);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.pricing-section .right-content .card-sub {
+  font-family: var(--font-family-secondary);
+  margin-bottom: 4px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.pricing-section .right-content .card-price {
+  font-family: var(--font-family-secondary);
+  margin-block: var(--space-block-xs);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.pricing-section .right-content .get-started-btn {
+  background-color: var(--pure-white-color);
+  color: var(--black-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  align-self: center;
+  width: 169px;
+  height: 48px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: background-color .2s;
+}
+
+.pricing-section .right-content .get-started-btn:hover {
+  background-color: var(--light-grey-color-2);
+}
+
+/*# sourceMappingURL=src_static_styles_ComponentCss_Feature_3Styles_scss_css_f9ee138c._.single.css.map*/

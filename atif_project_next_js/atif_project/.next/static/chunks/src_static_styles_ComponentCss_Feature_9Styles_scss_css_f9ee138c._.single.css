@@ -1,0 +1,103 @@
+/* [project]/src/static/styles/ComponentCss/Feature_9Styles.scss.css [app-client] (css) */
+.contact-section {
+  text-align: center;
+  color: #fff;
+  background-color: #233977;
+  padding: 100px 20px;
+}
+
+.contact-section .contact-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.contact-section .contact-label {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.contact-section .contact-heading {
+  font-family: var(--font-family-primary);
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.contact-section .contact-subheading {
+  font-family: var(--font-family-primary);
+  color: #1aa79c;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.contact-section .contact-desc {
+  font-family: var(--font-family-secondary);
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.contact-section .contact-form {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+}
+
+.contact-section .contact-form .form-row {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+}
+
+.contact-section .contact-form .form-input {
+  font-family: var(--font-family-secondary);
+  color: #fff;
+  background-color: #233977;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  flex: 250px;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.contact-section .contact-form .form-input::placeholder {
+  color: #aaa;
+}
+
+.contact-section .contact-form .form-textarea {
+  width: 100%;
+  min-height: 150px;
+  font-family: var(--font-family-secondary);
+  resize: vertical;
+  color: #fff;
+  background-color: #233977;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.contact-section .contact-form .form-textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-section .contact-form .submit-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #4b9dfe;
+  border: none;
+  border-radius: 2px;
+  align-self: center;
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact-section .contact-form .submit-btn:hover {
+  background-color: #3b89e0;
+}
+
+/*# sourceMappingURL=src_static_styles_ComponentCss_Feature_9Styles_scss_css_f9ee138c._.single.css.map*/

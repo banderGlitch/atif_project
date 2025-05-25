@@ -1,0 +1,14 @@
+.WhyChooseClyborn-card{
+    background: var(--pure-white-color);
+    padding: var(--space-block-sm);
+    border-radius: 12px;
+    .icon{
+
+    }
+    .feature-title{
+        padding-top: var(--space-block-sm);
+        padding-top: var(--space-block-xs);
+        font-size: var(--text-base);
+        color: var(--theme-blue-color);
+    }
+}

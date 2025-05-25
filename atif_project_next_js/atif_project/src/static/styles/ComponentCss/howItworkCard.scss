@@ -1,0 +1,13 @@
+.how-work-card{
+    background-color: var(--pure-white-color);
+    box-shadow: -8.81px 10.88px 38px 0px rgba(0, 0, 0, 0.05);
+    padding: var(--space-block-sm);
+    border-radius: 10px;
+    h2{
+        color: var(--theme-blue-color);
+        font-size: var(--text-sm);
+    }
+    p{
+        font-size: var(--text-tiny);
+    }
+}

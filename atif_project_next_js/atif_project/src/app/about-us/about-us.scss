@@ -1,0 +1,64 @@
+.about-us {
+    .page-sections {
+        .section-1 {
+            .wrap-page {
+
+                .buttons {
+                    display: flex;
+                    gap: var(--space-block-xs);
+                }
+
+                .para{
+                    padding-top: var(--space-block-sm);
+                }
+
+                .full-text{
+                    padding-top: var(--space-block-md);
+                }
+
+                .buttons{
+                    padding-top: var(--space-block-md);
+                }
+            }
+        }
+
+        .why-choose-section {
+            margin-top: var(--space-block-lg);
+            background-color: var(--theme-blue-color);
+            padding: var(--space-block-xs) 0px;
+
+            .wrap-page {
+                .heading {
+                    h2 {
+                        color: var(--pure-white-color);
+                    }
+                }
+                .para{
+
+                }
+                .cards{
+                    display: flex;
+                    gap: var(--space-block-sm);
+                }
+            }
+        }
+
+        .global-reach {
+            padding: var(--space-block-xs) 0px;
+
+            .wrap-page {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .left {
+                    width: 50%;
+                }
+
+                .full-text {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

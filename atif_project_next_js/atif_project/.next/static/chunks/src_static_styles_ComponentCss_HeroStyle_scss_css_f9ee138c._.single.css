@@ -1,0 +1,123 @@
+/* [project]/src/static/styles/ComponentCss/HeroStyle.scss.css [app-client] (css) */
+.hero .page-sections .section-1 .hero__container {
+  gap: var(--space-block-sm);
+  display: flex;
+}
+
+.hero .page-sections .section-1 .hero__container .social-bar {
+  padding-right: var(--space-block-sm);
+}
+
+.hero .page-sections .section-1 .hero__container .content {
+  flex-direction: column;
+  gap: 300px;
+  display: flex;
+}
+
+@media (width >= 992px) {
+  .hero .page-sections .section-1 .hero__container .content {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.hero .page-sections .section-1 .hero__container .content .left {
+  width: 100%;
+  padding-bottom: var(--space-block-md);
+}
+
+@media (width >= 992px) {
+  .hero .page-sections .section-1 .hero__container .content .left {
+    width: 55%;
+  }
+}
+
+.hero .page-sections .section-1 .hero__container .content .left .sub-heading {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  color: var(--teal-green-color);
+  margin-bottom: var(--space-block-xs);
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.hero .page-sections .section-1 .hero__container .content .left .main-para {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-regular);
+  color: var(--black-color);
+  align-items: center;
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  display: flex;
+}
+
+.hero .page-sections .section-1 .hero__container .content .left .para {
+  padding-top: var(--space-block-sm);
+}
+
+.hero .page-sections .section-1 .hero__container .content .left .buttons {
+  gap: var(--space-block-xs);
+  padding-top: var(--space-block-md);
+  display: flex;
+}
+
+.hero .page-sections .section-1 .hero__container .content .left .buttons .cta-button {
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  width: 186px;
+  height: 52px;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.hero .page-sections .section-1 .hero__container .content .left .buttons .cta-button:hover {
+  opacity: .9;
+}
+
+.hero .page-sections .section-1 .hero__container .content .left .buttons .cta-button.cta-talk {
+  background-color: var(--teal-green-color);
+}
+
+.hero .page-sections .section-1 .hero__container .content .left .buttons .cta-button.cta-buy {
+  background-color: var(--theme-blue-color);
+}
+
+.hero .page-sections .section-1 .hero__container .content .left .video-demo {
+  align-items: center;
+  gap: var(--space-block-xs);
+  padding-top: var(--space-block-sm);
+  padding-bottom: var(--space-block-sm);
+  display: flex;
+}
+
+.hero .page-sections .section-1 .hero__container .content .left .video-demo .play-icon-wrapper {
+  background-color: var(--theme-blue-color);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin-right: 0;
+  display: flex;
+}
+
+.hero .page-sections .section-1 .hero__container .content .right {
+  max-width: 520px;
+  margin-left: var(--space-block-xl);
+  flex-shrink: 0;
+}
+
+.hero .page-sections .section-1 .hero__container .content .right img {
+  object-fit: contain;
+  border-radius: 12px;
+  width: 480px;
+  height: 480px;
+  display: block;
+}
+
+/*# sourceMappingURL=src_static_styles_ComponentCss_HeroStyle_scss_css_f9ee138c._.single.css.map*/
