@@ -3,6 +3,8 @@
     --heading-lg: 72px;
     --heading-md: 48px;
     --text-xl: 42px;
+    --text-lg_1: 47px;
+    --text-lg_2: 59px;
     --text-lg: 36px;
     --text-md: 30px;
     --text-base: 24px;
@@ -21,18 +23,21 @@
     --font-weight-bold: 700;
   
     // Spacing
+    --space-block-xxxs: 500px;
     --space-block-xxl: 110px;
     --space-block-xl: 80px;
     --space-block-lg: 60px;
     --space-block-md: 40px;
     --space-block-sm: 25px;
     --space-block-xs: 15px;
+
   
     // Colors
     --theme-blue-color: rgba(35, 57, 120, 1);
     --pure-white-color: rgba(255, 255, 255, 1);
     --teal-green-color: rgba(25, 167, 155, 1);
     --light-grey-color: rgba(250, 250, 250, 1);
+    --light-grey-color-2: rgba(230, 230, 230, 1);
     --black-color: #1E1E1E;
 
     --font-family-primary: 'Teko', sans-serif;
