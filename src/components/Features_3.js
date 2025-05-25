@@ -1,12 +1,10 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import LayoutContainer from './LayoutContainer';
 import '../static/styles/ComponentCss/Feature_3Styles.css';
 
 function PricingSection() {
   return (
     <section className="pricing-section">
-      <LayoutContainer>
         <Row className="align-items-center">
           {/* LEFT COLUMN */}
           <Col md={6}>
@@ -46,7 +44,6 @@ function PricingSection() {
             </div>
           </Col>
         </Row>
-      </LayoutContainer>
     </section>
   );
 }

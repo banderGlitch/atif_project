@@ -1,4 +1,3 @@
-import LayoutContainer from "./LayoutContainer";
 import React from 'react'
 import '../static/styles/ComponentCss/Feature_2Styles.css'
 import { Container, Row, Col } from 'react-bootstrap'
@@ -51,7 +50,6 @@ const approaches = [
 function Features_2() {
     return (
         <section className="approach-section">
-            <LayoutContainer>
                 <p className="approach-label">
                     Our Valuation Approach
                 </p>
@@ -78,7 +76,6 @@ function Features_2() {
                         </Col>
                     ))}
                 </Row>
-            </LayoutContainer>
         </section>
     )
 }
