@@ -1,5 +1,4 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Hero from "@/components/Hero";
 import FeaturesSection from "@/components/Features";
 import Features_2 from "@/components/Features_2";
