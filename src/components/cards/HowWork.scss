@@ -1,0 +1,13 @@
+.how-work{
+    background-color: var(--theme-blue-color);
+    padding: var(--space-block-xs);
+    border-radius: 12px;
+    h2{
+      font-size: var(--heading-sm);
+      color: var(--teal-green-color);
+    }
+    p{
+        font-size: var(--text-caption);
+        color: var(--pure-white-color);
+    }
+}

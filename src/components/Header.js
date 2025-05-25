@@ -27,47 +27,44 @@ const Header = () => {
           <div className="relative h-8 md:h-10 w-auto">
             <a href="/">
               <Image
-              src="/images/logo.png"
-              alt="Clybourne"
-              width={120}
-              height={40}
-              className="object-contain h-full w-auto"
-            />
+                src="/images/logo.png"
+                alt="Clybourne"
+                width={120}
+                height={40}
+                className="object-contain h-full w-auto"
+              />
             </a>
           </div>
 
-          {/* Hamburger Button */}
+          {/* Hamburger Button (visible on screens ≤ 1023px) */}
           {mounted && (
             <button
-              className="flex flex-col justify-center items-center w-10 h-10 md:hidden group focus:outline-none"
+              className="flex flex-col justify-center items-center lg:hidden group focus:outline-none"
               aria-label="Toggle navigation menu"
               onClick={() => setNavDrawer(!navDrawer)}
             >
               <span
-                className={`block h-0.5 w-6 bg-black rounded transition-all duration-300 ease-in-out ${
-                  navDrawer ? "rotate-45 translate-y-2" : ""
-                }`}
+                className={`block h-0.5 w-6 bg-black rounded transition-all duration-300 ease-in-out ${navDrawer ? "rotate-45 translate-y-2" : ""
+                  }`}
               ></span>
               <span
-                className={`block h-0.5 w-6 bg-black rounded transition-all duration-300 ease-in-out my-1 ${
-                  navDrawer ? "opacity-0" : ""
-                }`}
+                className={`block h-0.5 w-6 bg-black rounded transition-all duration-300 ease-in-out my-1 ${navDrawer ? "opacity-0" : ""
+                  }`}
               ></span>
               <span
-                className={`block h-0.5 w-6 bg-black rounded transition-all duration-300 ease-in-out ${
-                  navDrawer ? "-rotate-45 -translate-y-2" : ""
-                }`}
+                className={`block h-0.5 w-6 bg-black rounded transition-all duration-300 ease-in-out ${navDrawer ? "-rotate-45 -translate-y-2" : ""
+                  }`}
               ></span>
             </button>
           )}
 
-          {/* Desktop Navigation */}
-          <ul className="hidden md:flex flex-wrap items-center space-x-2 lg:space-x-4">
+          {/* Desktop Navigation (visible on screens ≥ 1024px) */}
+          <ul className="hidden lg:flex flex-wrap items-center space-x-2 lg:space-x-4">
             {navItems.map((item, index) => (
               <li key={index}>
                 <a
                   href={item.url}
-                  className="text-gray-700 hover:text-gray-400 px-2 py-1 transition-colors duration-200"
+                  className="text-gray-700 hover:text-gray-400 px-3 py-1 transition-colors duration-200"
                 >
                   {item.label}
                 </a>
@@ -82,31 +79,37 @@ const Header = () => {
         </nav>
       </div>
 
-      {/* Mobile Drawer */}
+      {/* Mobile Drawer (only for screens < 1024px) */}
       {mounted && (
         <div
-          className={`fixed top-0 right-0 w-3/4 max-w-xs p-8 bg-white rounded-l-lg shadow-2xl z-[100] transition-transform duration-300 ease-in-out md:hidden ${
-            navDrawer ? "translate-x-0" : "translate-x-full"
-          }`}
-          style={{ minWidth: "200px" }}
+          className={`fixed top-0 right-0 w-[100%] max-w-xs p-8 bg-white rounded-l-lg shadow-2xl z-[100] transition-transform duration-300 ease-in-out lg:hidden ${navDrawer ? "translate-x-0" : "translate-x-full"
+            }`}
+          style={{ maxWidth: "100%" }}
         >
-          <div className="flex justify-end mb-4">
+          <div className="flex justify-between items-center mb-4">
+            <Image
+              src="/images/logo.png"
+              alt="Clybourne"
+              width={120}
+              height={40}
+              className="object-contain h-full w-auto"
+            />
             <button
-              className="flex flex-col justify-center items-center w-10 h-10 group focus:outline-none"
-              aria-label="Close navigation menu"
+              className="relative w-10 h-10 flex items-center justify-center group"
               onClick={() => setNavDrawer(false)}
+              aria-label="Close navigation menu"
             >
-              <span className="block h-0.5 w-6 bg-black rounded rotate-45 translate-y-2 transition-all duration-300 ease-in-out"></span>
-              <span className="block h-0.5 w-6 bg-black rounded opacity-0 my-1 transition-all duration-300 ease-in-out"></span>
-              <span className="block h-0.5 w-6 bg-black rounded -rotate-45 -translate-y-2 transition-all duration-300 ease-in-out"></span>
+              <span className="absolute block w-6 h-0.5 bg-black transform rotate-45 transition duration-300 ease-in-out"></span>
+              <span className="absolute block w-6 h-0.5 bg-black transform -rotate-45 transition duration-300 ease-in-out"></span>
             </button>
           </div>
-          <ul className="flex flex-col items-center space-y-4">
+
+          <ul className="flex flex-col space-y-4">
             {navItems.map((item, index) => (
               <li key={index}>
                 <a
                   href={item.url}
-                  className="text-gray-700 hover:text-gray-400 text-lg transition-colors duration-200"
+                  className="text-gray-700 hover:text-gray-400 text-sm transition-colors duration-200"
                 >
                   {item.label}
                 </a>

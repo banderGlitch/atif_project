@@ -1,31 +1,35 @@
 .about-us {
     .page-sections {
         .section-1 {
-            .wrap-page {
+            margin-bottom: var(--space-block-xxl);
 
+            .wrap-page {
+                 h1{
+                    font-family: 'InterMedium';
+                 }
                 .buttons {
                     display: flex;
                     gap: var(--space-block-xs);
                 }
 
-                .para{
+                .para {
                     padding-top: var(--space-block-sm);
                 }
 
-                .full-text{
+                .full-text {
                     padding-top: var(--space-block-md);
+
                 }
 
-                .buttons{
+                .buttons {
                     padding-top: var(--space-block-md);
                 }
             }
         }
 
         .why-choose-section {
-            margin-top: var(--space-block-lg);
             background-color: var(--theme-blue-color);
-            padding: var(--space-block-xs) 0px;
+            padding: var(--space-block-lg) 0px;
 
             .wrap-page {
                 .heading {
@@ -33,10 +37,21 @@
                         color: var(--pure-white-color);
                     }
                 }
-                .para{
 
+                .para {
+                    padding-top: var(--space-block-xs);
                 }
-                .cards{
+
+                .full-text {
+                    padding-top: var(--space-block-sm);
+
+                    p {
+                        color: var(--pure-white-color);
+                    }
+                }
+
+                .cards {
+                    padding-top: var(--space-block-sm);
                     display: flex;
                     gap: var(--space-block-sm);
                 }
@@ -44,12 +59,17 @@
         }
 
         .global-reach {
-            padding: var(--space-block-xs) 0px;
+            padding: var(--space-block-lg) 0px;
+            background-color: var(--light-grey-color);
 
             .wrap-page {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                .para {
+                    padding-top: var(--space-block-xs);
+                }
 
                 .left {
                     width: 50%;
@@ -57,8 +77,182 @@
 
                 .full-text {
                     width: 50%;
+
+                    p {
+                        color: var(--text-grey-color);
+                        font-size: var(--text-md);
+                    }
                 }
             }
         }
+
+        .clybourn-promise {
+            padding: var(--space-block-lg) 0px;
+
+            .wrap-page {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: var(--space-block-md);
+
+                .left {
+                    width: 50%;
+
+                    .para {
+                        padding-top: var(--space-block-sm);
+                    }
+                }
+
+                .full-text {
+                    width: 50%;
+
+                    .content {
+                        &:not(:last-child) {
+                            border-bottom: 1px solid var(--teal-green-color);
+                        }
+
+                        h2 {
+                            font-size: var(--text-base);
+                            color: var(--theme-blue-color);
+                            font-size: var(--heading-sm);
+                        }
+
+                        p {
+                            font-size: var(--text-md);
+                        }
+                    }
+                }
+            }
+        }
+
+        .meet-visionaries {
+            background-color: var(--theme-blue-color);
+            background-color: var(--light-grey-color);
+            padding: var(--space-block-xl) 0px;
+
+            .wrap-page {
+                .para {}
+
+                .full-text {
+                    p {
+                        font-size: var(--text-caption);
+                        color: var(--text-grey-color);
+                    }
+                }
+
+                .cards {
+                    padding-top: var(--space-block-md);
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: var(--space-block-sm);
+                }
+            }
+        }
+
+        .how-works {
+            background-color: var(--light-grey-color);
+            padding-top: var(--space-block-lg);
+
+            .main-container {
+                position: relative;
+                padding: var(--space-block-lg) 0;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 30%;
+                    height: 100%;
+                    background-color: var(--teal-green-color);
+                    z-index: 0; // 👈 Send the background behind
+                }
+
+                .wrap-page {
+                    position: relative; // 👈 Needed for z-index to apply
+                    z-index: 1; // 👈 Bring wrap-page (and its children) above the background
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: var(--space-block-sm);
+
+                    .cards {
+                        display: flex;
+                        gap: var(--space-block-sm);
+                    }
+                }
+            }
+        }
+
+        .industry-leaders {
+            padding: var(--space-block-xl) 0px;
+
+            .wrap-page {
+                .para {}
+
+                .full-text {
+                    p {
+                        font-size: var(--text-caption);
+                        color: var(--text-grey-color);
+                    }
+                }
+
+                .cards {
+                    padding-top: var(--space-block-md);
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: var(--space-block-sm);
+                }
+            }
+        }
+
+
+    }
+}
+
+@media(max-width:767px) {
+    .about-us .page-sections .clybourn-promise .wrap-page {
+        flex-direction: column;
+
+        .left {
+            width: 100%;
+        }
+
+        .full-text {
+            width: 100%;
+        }
+    }
+
+    .about-us .page-sections .how-works .main-container .wrap-page {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:600px) {
+    .about-us .page-sections .why-choose-section .wrap-page .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us .page-sections .global-reach .wrap-page {
+        flex-direction: column;
+        align-items: start;
+
+        .left {
+            width: 100%;
+        }
+
+        .full-text {
+            width: 100%;
+        }
+    }
+
+    .about-us .page-sections .meet-visionaries .wrap-page .cards {
+        flex-direction: column;
+    }
+
+
+    .about-us .page-sections .how-works .main-container .wrap-page .cards {
+        flex-direction: column;
     }
 }

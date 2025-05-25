@@ -3,6 +3,8 @@ import "./globals.css";
 import "../static/styles/globalCss/global.scss"
 import Hero from "@/components/Hero";
 import Header from "@/components/Header";
+import React from "react";
+import "./about-us/about-us.scss"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
